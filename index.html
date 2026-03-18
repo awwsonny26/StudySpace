@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudySpace — каталог онлайн-курсів</title>
+    <meta
+      name="description"
+      content="Адаптивний вебзастосунок-каталог онлайн-курсів StudySpace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#home" class="logo">StudySpace</a>
+
+        <button
+          class="burger"
+          type="button"
+          aria-label="Відкрити меню"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#categories">Категорії</a></li>
+            <li><a href="#courses">Курси</a></li>
+            <li><a href="#about">Переваги</a></li>
+            <li><a href="#contact">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="hero__label">Онлайн-навчання без зайвого шуму</p>
+            <h1>Знайди курс, який реально допоможе прокачати навички</h1>
+            <p class="hero__text">
+              StudySpace — це адаптивний каталог онлайн-курсів, де зручно
+              переглядати напрями, порівнювати програми та знаходити навчання
+              під свій рівень.
+            </p>
+            <div class="hero__actions">
+              <a href="#courses" class="button button--primary">Переглянути курси</a>
+              <a href="#categories" class="button button--secondary">Обрати категорію</a>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="hero-stat">
+              <strong>24</strong>
+              <span>доступні курси</span>
+            </div>
+            <div class="hero-stat">
+              <strong>8</strong>
+              <span>навчальних напрямів</span>
+            </div>
+            <div class="hero-stat">
+              <strong>12</strong>
+              <span>практикуючих викладачів</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section__heading">
+            <p class="section__label">Категорії</p>
+            <h2>Напрями, які можна переглядати на платформі</h2>
+          </div>
+
+          <div class="categories-grid">
+            <article class="category-card">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript та основи адаптивної верстки.</p>
+            </article>
+            <article class="category-card">
+              <h3>Backend</h3>
+              <p>Node.js, Express, API, бази даних та серверна логіка.</p>
+            </article>
+            <article class="category-card">
+              <h3>UI/UX</h3>
+              <p>Робота з інтерфейсами, композицією та поведінкою користувача.</p>
+            </article>
+            <article class="category-card">
+              <h3>Data Basics</h3>
+              <p>Вступ до аналізу даних, SQL та базової обробки інформації.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="courses">
+        <div class="container">
+          <div class="section__heading">
+            <p class="section__label">Курси</p>
+            <h2>Популярні програми навчання</h2>
+          </div>
+
+          <div class="courses-grid">
+            <article class="course-card">
+              <span class="course-card__tag">Frontend</span>
+              <h3>Основи HTML та CSS</h3>
+              <p>
+                Курс для початку роботи з вебсторінками, семантичною розміткою
+                та сучасним оформленням інтерфейсу.
+              </p>
+              <ul class="course-card__meta">
+                <li>Рівень: початковий</li>
+                <li>Тривалість: 4 тижні</li>
+                <li>Викладач: Анна Коваль</li>
+              </ul>
+            </article>
+
+            <article class="course-card">
+              <span class="course-card__tag">Backend</span>
+              <h3>Node.js та Express для початківців</h3>
+              <p>
+                Практичний вступ до серверної розробки, маршрутів, запитів та
+                побудови простої логіки API.
+              </p>
+              <ul class="course-card__meta">
+                <li>Рівень: початковий</li>
+                <li>Тривалість: 5 тижнів</li>
+                <li>Викладач: Ігор Марченко</li>
+              </ul>
+            </article>
+
+            <article class="course-card">
+              <span class="course-card__tag">UI/UX</span>
+              <h3>Дизайн інтерфейсів для вебу</h3>
+              <p>
+                Огляд принципів зручного інтерфейсу, побудови макетів і
+                організації контенту на екрані.
+              </p>
+              <ul class="course-card__meta">
+                <li>Рівень: середній</li>
+                <li>Тривалість: 3 тижні</li>
+                <li>Викладач: Марія Савчук</li>
+              </ul>
+            </article>
+
+            <article class="course-card">
+              <span class="course-card__tag">Data Basics</span>
+              <h3>SQL та робота з даними</h3>
+              <p>
+                Базове знайомство з таблицями, вибірками та організацією даних
+                для навчальних і прикладних задач.
+              </p>
+              <ul class="course-card__meta">
+                <li>Рівень: початковий</li>
+                <li>Тривалість: 4 тижні</li>
+                <li>Викладач: Олена Руденко</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__heading">
+            <p class="section__label">Переваги</p>
+            <h2>Чому цей формат зручний для користувача</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <h3>Зрозуміла структура</h3>
+              <p>
+                Уся інформація поділена на логічні блоки, тому користувач швидко
+                орієнтується на сторінці.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Адаптивний дизайн</h3>
+              <p>
+                Сторінка коректно відображається на великих екранах, планшетах і
+                смартфонах.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Швидкий доступ до курсів</h3>
+              <p>
+                Картки курсів дозволяють одразу побачити ключову інформацію без
+                зайвих переходів.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--accent" id="contact">
+        <div class="container contact-box">
+          <div>
+            <p class="section__label section__label--light">Зворотний зв’язок</p>
+            <h2>Потрібна допомога з вибором курсу?</h2>
+            <p>
+              Залиши заявку, щоб отримати консультацію щодо напряму навчання та
+              підбору програми.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              <span>Ім’я</span>
+              <input type="text" placeholder="Введіть ваше ім’я" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="example@email.com" />
+            </label>
+            <label>
+              <span>Повідомлення</span>
+              <textarea rows="4" placeholder="Напишіть коротке повідомлення"></textarea>
+            </label>
+            <button type="submit" class="button button--primary">Надіслати</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a href="#home" class="logo logo--footer">StudySpace</a>
+          <p>Адаптивний каталог онлайн-курсів для навчального проєкту.</p>
+        </div>
+        <div class="footer__contacts">
+          <p>Email: studyspace@example.com</p>
+          <p>Телефон: +380 (00) 123-45-67</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
