@@ -1,0 +1,25 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: studyspace-mysql
+    restart: unless-stopped
+    ports:
+      - "${DB_PORT:-3306}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
+      MYSQL_DATABASE: "${DB_NAME}"
+    volumes:
+      - studyspace_mysql_data:/var/lib/mysql
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "mysqladmin ping -h 127.0.0.1 -uroot -p${DB_PASSWORD} --silent"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+volumes:
+  studyspace_mysql_data:
