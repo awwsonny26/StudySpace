@@ -1,0 +1,23 @@
+{
+  "name": "studyspace",
+  "version": "1.0.0",
+  "description": "StudySpace lab 2 backend with Express, MySQL, mysql2, and Sequelize.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "studyspace",
+    "express",
+    "mysql2",
+    "sequelize"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.3"
+  }
+}
