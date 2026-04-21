@@ -1,5 +1,6 @@
 const Category = require('./category.model');
 const Course = require('./course.model');
+const User = require('./user.model');
 
 Category.hasMany(Course, {
   foreignKey: 'categoryId',
@@ -13,5 +14,6 @@ Course.belongsTo(Category, {
 
 module.exports = {
   Category,
-  Course
+  Course,
+  User
 };

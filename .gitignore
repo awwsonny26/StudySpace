@@ -1,3 +1,72 @@
+# dependencies
 node_modules/
+
+# env files
 .env
+.env.*
+!.env.example
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# runtime / pid
+pids
+*.pid
+*.pid.lock
+*.seed
+
+# coverage / test output
+coverage/
+.nyc_output/
+
+# build / cache
+dist/
+build/
+.tmp/
+temp/
+.cache/
+.parcel-cache/
+.eslintcache
+
+# framework / bundler leftovers
+.next/
+.nuxt/
+.svelte-kit/
+vite.svg
+
+# OS files
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# local database / misc dumps
+*.sqlite
+*.sqlite3
+
+# archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# docker local overrides
+docker-compose.override.yml
